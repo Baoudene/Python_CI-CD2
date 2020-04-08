@@ -34,7 +34,7 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        export pythonpath=src
+        export PYTHONPATH=src
         pytest
     - name: Deploy to Heroku
       env:
